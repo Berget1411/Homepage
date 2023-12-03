@@ -85,11 +85,6 @@
   margin-top: 50px !important;
   max-width: 1000px;
   margin: auto;
-
-  h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
 }
 
 .projects {
@@ -129,7 +124,9 @@
 }
 
 .view-more-projects {
+  margin: 10px 0px 60px 0px;
   gap: 10px;
+
   p {
     font-size: 1.2em;
     font-weight: bold;
@@ -137,5 +134,44 @@
 
   img {
     cursor: pointer;
+  }
+}
+
+footer {
+  padding-top: 100px;
+}
+
+.contact {
+  max-width: 1000px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+
+  .left {
+    max-width: 300px;
+
+    ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      font-size: 1.1em;
+
+      .email-phone {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          @include index.icon-size(26px);
+        }
+      }
+    }
+  }
+
+  .right {
+    width: 600px;
+    height: 476px !important;
+    object-fit: cover;
   }
 }
