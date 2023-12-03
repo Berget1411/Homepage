@@ -29,6 +29,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/i,
+        exclude: /node_modules/,
         loader: 'html-loader',
       },
       {
@@ -58,6 +59,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
         type: 'asset/resource',
+        exclude: /node_modules/,
       },
     ],
   },

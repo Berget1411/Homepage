@@ -1,3 +1,18 @@
+/* common reused styles */
+
+@mixin icon-size($pixel) {
+  height: $pixel;
+  width: $pixel;
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CSS fonts */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
 /* CSS Reset */
@@ -36,4 +51,5 @@ video {
 
 body {
   background-color: var(--primary-color);
+  font-family: 'Robot', sans-serif;
 }
