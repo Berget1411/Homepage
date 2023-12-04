@@ -6,29 +6,41 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="about-me diagonal">
-      <div class="profile">
-        <img src="./assets/images/profile.jpg" alt="" class="profile-picture" />
-        <p class="profile-name">Ludvig</p>
-      </div>
-
-      <div class="card">
-        <h1>About me</h1>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, tempora
-          dolores. Dolorum ut sint dolore, qui vitae nobis, sequi totam quia
-          veritatis aliquam ex pariatur autem. Illum voluptatem quibusdam sequi?
-          Doloremque incidunt cum architecto recusandae nisi pariatur
-          exercitationem at harum ipsam quos, nam quibusdam vel maiores
-          voluptatem cupiditate perferendis? Modi iure vero eum repellat
-          voluptatem optio minus assumenda obcaecati placeat.
-        </p>
-        <div class="links">
-          <a href=""><img src="./assets/images/github.svg" alt="" /></a>
-          <a href=""><img src="./assets/images/linkedin.svg" alt="" /></a>
+    <div class="diagonal">
+      <section class="about-me">
+        <div class="profile">
+          <picture class="profile-picture">
+            <source
+              srcset="./assets/images/profile-medium.jpg"
+              media="(max-width: 600px)"
+            />
+            <img
+              src="./assets/images/profile-large.jpg"
+              class="profile-picture"
+              alt=""
+            />
+          </picture>
+          <p class="profile-name">Ludvig</p>
         </div>
-      </div>
-    </section>
+
+        <div class="card">
+          <h1>About me</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic,
+            tempora dolores. Dolorum ut sint dolore, qui vitae nobis, sequi
+            totam quia veritatis aliquam ex pariatur autem. Illum voluptatem
+            quibusdam sequi? Doloremque incidunt cum architecto recusandae nisi
+            pariatur exercitationem at harum ipsam quos, nam quibusdam vel
+            maiores voluptatem cupiditate perferendis? Modi iure vero eum
+            repellat voluptatem optio minus assumenda obcaecati placeat.
+          </p>
+          <div class="links">
+            <a href=""><img src="./assets/images/github.svg" alt="" /></a>
+            <a href=""><img src="./assets/images/linkedin.svg" alt="" /></a>
+          </div>
+        </div>
+      </section>
+    </div>
     <main class="my-projects">
       <h2>My work</h2>
       <section class="projects">
@@ -200,7 +212,19 @@
           </ul>
         </div>
         <div class="right">
-          <img src="./assets/images/battleship.png" alt="" />
+          <picture>
+            <source
+              srcset="./assets/images/stockholm-250.jpg"
+              media="(max-width: 550px)"
+              style="display: none"
+            />
+            <source
+              srcset="./assets/images/stockholm-250.jpg"
+              media="(max-width: 839px)"
+            />
+
+            <img src="./assets/images/stockholm-600.jpg" alt="" />
+          </picture>
         </div>
       </div>
     </footer>
